@@ -552,11 +552,11 @@ iprint.df(round(cluster_profile_ratios-1, 2))
 1.The numbers in the last table indicate the % deviation from the mean of the population that each segment exhibits for a given question. Ie. for Question 1.1 Segment 1's average value is equal to the mean of the population while Segment 5 is on average 7% less than the mean. 
 
 2. The key features are the initial attitude questions (columns 2 to 30) and the final brand equity questions (columns 52-81). You can see that these features have clearly separate levels for each segments while there is much more overlap in the other features (columns 31-51).
-Segment 1: Q1.11 (-0.38) and Q7.1 (-0.17); this segment is not boat savy and does not go out on the water alone. 
-Segment 2: Q1.11 (0.25), Q17 (0.25) and Q1.2 (-0.23); this segment is boat savy and is a fan of the brand Funnel - they are brand conscious and not very price sensitive.
-Segment 3: Q1.9 (0.45), Q1.2 (0.35), Q18 (-0.27) and Q1.26 (0.27); this segment is very status-oriented, they want a powerful boat regardless of the brand but they are price conscious. 
-Segment 4: Q17 (-0.19), Q1.4 (-0.16) and Q1.9 (-0.15); this segment is well informed, they do not buy boats for status or based on the brand but rather on other characteristics - they are not brand ambassadors. 
-Segment 5: Q1.9 (-0.42), Q1.11 (0.22), Q15 (0.18) and Q1.2 (-0.18); this segment represents true boating aficionados, they do not care about status at all and do their own maintenance, they are not very price-conscious and are slightly older than the general population surveyed.
+Segment 1: Q1.11 (-0.38) and Q7.1 (-0.17)
+Segment 2: Q1.11 (0.25), Q17 (0.25) and Q1.2 (-0.23)
+Segment 3: Q1.9 (0.45), Q1.2 (0.35), Q18 (-0.27) and Q1.26 (0.27) 
+Segment 4: Q17 (-0.19), Q1.4 (-0.16) and Q1.9 (-0.15) 
+Segment 5: Q1.9 (-0.42), Q1.11 (0.22), Q15 (0.18) and Q1.2 (-0.18)
 
 
 ## Step 8: Robustness Analysis
@@ -572,16 +572,27 @@ We should also consider the robustness of our analysis as we change the clusteri
 
 **Answers**
 
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
+1. There are 5 segments that we selected in our market.  
+a) The statistical reason that we chose this number of segments is that 5 segments is where the "elbow" of the distance plot lies. Meaning, that the distance between the segments becomes much smaller as you increase the number of segments beyond this point. This number of segments was also robust in the sense that the segments created were similar when we ran both hclust and kmeans methods.   
+b) The interpretation of these segments is simple and clear. There are decisive profiles for each segment. They have differing price sensitivities, uses for their boats and attitudes towards boating in general.   
+c) The 5 segments we discovered are useful from a business sense in that there are clear types of boats that suit each segment. In addition, 5 different kinds of boats are a reasonable number for the company to consider.
+
+2. 
+Segment 1 is not boat savy and describes people who do not go out on the water alone. 
+Segment 2 is boat savy and are brand loyal - they are brand conscious and not very price sensitive.
+Segment 3 is very status-oriented, they want a powerful boat regardless of the brand but they are price conscious at the same time.
+Segment 4 is well informed, they do not buy boats for status or based on the brand but rather on other characteristics - they are not brand loyal. 
+Segment 5 represents true boating aficionados, they do not care about status at all and do their own maintenance, they are not very price-conscious and are slightly older than the general population surveyed.
+
+
+3. When we changed the number of factors, increasing the number of components from 5 to 6 and 7, the results in terms of segmentation did not yield significant difference. This is as expected as we saw this from one of the analysis where adding component 6 and 7 only add 5.92% (cumulatively) explanation.
+
+4. Our recommendation to CreeqBoat Company would be to target Segment 4. This is a relatively large segment so the market size is attractive. Their profile is that they are not brand loyal and they are not status conscious. This means that they can be easily convinced to switch boats and do not need a high brand value in order to pick a boat. Thererfore, marketing expense does not need to be especially high to make inroads with this segment.
+Another opportunity would be to invest in brand marketing to seduce more customers in Segment 2; this segment is brand loyal and not very price sensitive, which means that if CreeqBoat can reach high brand awareness and recognition they will be able to sell them pricier boats.
+CreeqBoat can also invest in developing a boat with a powerful motor that is at a lower price point to seduce segment 3, who are very status oriented but price conscious. 
+Another opportunity would be to develop a boat targeted at segment 5; this could be a well-thought out boat built to last with good performance and specifications that could speak to an knowledgeable audience.
+The largest segment, segment 1 is not a very precise segment; it probably represents the average boat buyer that is not very knowledgeable or savy. CreeqBoat can continue to address this large population segment with regular marketing efforts and boat line. 
+
 
 <hr>\clearpage
 
