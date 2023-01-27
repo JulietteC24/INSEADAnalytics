@@ -552,12 +552,11 @@ iprint.df(round(cluster_profile_ratios-1, 2))
 1.The numbers in the last table indicate the % deviation from the mean of the population that each segment exhibits for a given question. Ie. for Question 1.1 Segment 1's average value is equal to the mean of the population while Segment 5 is on average 7% less than the mean. 
 
 2. The key features are the initial attitude questions (columns 2 to 30) and the final brand equity questions (columns 52-81). You can see that these features have clearly separate levels for each segments while there is much more overlap in the other features (columns 31-51).
-Segment 1: 
-Segment 2: 
-Segment 3: 
-Segment 4: 
-Segment 5:
-TEST1
+Segment 1: Q1.11 (-0.38) and Q7.1 (-0.17); this segment is not boat savy and does not go out on the water alone. 
+Segment 2: Q1.11 (0.25), Q17 (0.25) and Q1.2 (-0.23); this segment is boat savy and is a fan of the brand Funnel - they are brand conscious and not very price sensitive.
+Segment 3: Q1.9 (0.45), Q1.2 (0.35), Q18 (-0.27) and Q1.26 (0.27); this segment is very status-oriented, they want a powerful boat regardless of the brand but they are price conscious. 
+Segment 4: Q17 (-0.19), Q1.4 (-0.16) and Q1.9 (-0.15); this segment is well informed, they do not buy boats for status or based on the brand but rather on other characteristics - they are not brand ambassadors. 
+Segment 5: Q1.9 (-0.42), Q1.11 (0.22), Q15 (0.18) and Q1.2 (-0.18); this segment represents true boating aficionados, they do not care about status at all and do their own maintenance, they are not very price-conscious and are slightly older than the general population surveyed.
 
 
 ## Step 8: Robustness Analysis
