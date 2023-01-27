@@ -284,14 +284,14 @@ write.csv(Rotated_Factors_thres, file = "Rotated_Factors_thres.csv")
 1. For the first factor (component 1), the questions with significant values refer to boats as a status symbol for the customer. For the second factor (component 2), questions pertain to lifestyle where the customer treats their boats as rewards for their hard work, needing to go on an adventure. These two factors were considered the first and second component as they heavily influence the behavior of the customers towards their boats, how they value boats, which makes a lot of business sense.
 
 2. We should choose 5 factors. 
-a) Each of these factors have an eigenvalue that's higher than 1, which means they each explain a higher amount of variability than the average factor. The cumulative variability they explain is higher than 50%. 
+a) Each of these factors have an eigenvalue that's higher than 1, which means they each explain a higher amount of variability than the average factor. The cumulative variability they explain is higher than 50%.
 b) These factors are easily interpretable (see question 3). 
-
 c) The first 5 factors capture the key drivers of individuals when it comes to boat purchases and boating preferences. Having more than 5 would risk oversegmentation.
 
 3. Looking at the questions within each factor, the significant ones were considered, and the following interpretation were derived. For the first factor, having high eigenvalue and explanatory power, refers to the value of boats for each customer if they treat boats as a status symbol or not. For the second factor, the questions pertain to lifestyle or how the boats will be used or is used by the customers. For the third factor, questions who how customers appreciate boat quality and brand. For the fourth factor, the questions determine the level of expertise of the customers, following from the appreciation of customers on boat quality. Lastly, the fifth factor has questions on practicality. These factors or grouping of questions help in focusing on the key behavior of customers.
 
 4. Data science techniques are very helpful in deriving useful insights from the data that would be otherwise difficult to digest and explain to the business. In this specific case, these techniques enables us to intrepret the customer responses to a survey and understand what factors customer appreciate when making a purchase decision.
+
 
 ## Step 6:  Save factor scores 
 
@@ -325,6 +325,7 @@ Factor 2: Q.18 or 21 (we chose 21)
 Factor 3: Q.4
 Factor 4: Q.11
 Factor 5: Q.2
+
 
 <hr>\clearpage
 
@@ -482,8 +483,8 @@ There are many ways to do the profiling of the segments. For example, here we sh
 Here are for example the profiles of the segments using the clusters found above.  First let's see just the average answer people gave to each question for the different segments as well as the total population:
 
 ```{r}
-cluster_memberships_kmeans <- kmeans_clusters$cluster 
-cluster_ids_kmeans <- unique(cluster_memberships_kmeans)
+#cluster_memberships_kmeans <- kmeans_clusters$cluster 
+#cluster_ids_kmeans <- unique(cluster_memberships_kmeans)
 
 #change this variable to change different clustering methods (from hclust to kmeans)
 profile_with = "hclust"
@@ -551,6 +552,11 @@ iprint.df(round(cluster_profile_ratios-1, 2))
 1.The numbers in the last table indicate the % deviation from the mean of the population that each segment exhibits for a given question. Ie. for Question 1.1 Segment 1's average value is equal to the mean of the population while Segment 5 is on average 7% less than the mean. 
 
 2. The key features are the initial attitude questions (columns 2 to 30) and the final brand equity questions (columns 52-81). You can see that these features have clearly separate levels for each segments while there is much more overlap in the other features (columns 31-51).
+Segment 1: 
+Segment 2: 
+Segment 3: 
+Segment 4: 
+Segment 5:
 
 ## Step 8: Robustness Analysis
 
