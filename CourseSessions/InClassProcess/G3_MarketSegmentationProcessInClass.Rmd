@@ -314,16 +314,25 @@ write.csv(NEW_ProjectData, file = "FactorScores.csv")
 **Answers**
 
 1. 
+
 *Observation 1*
+
 This customer has high values for factor 3, 1, and 2 (ordered). This means the customer appreciates boats, aiming for high-quality and/or good brand. The boat is treated as a status symbol for the customer and part of their lifestyle, but the customer is not necessarily an expert in technical aspect of owning a boat, and therefore would be more inclined to buy a boat because of brand instead of functionality (not an economical buyer)
+
 *Observation 10*
+
 The customer has high value for factor 3 where the customer has high appreciation for boats especially for high quality ones. Boat is part of the customer’s lifestyle, the thing that they reward themselves with. However, the customer is not necessarily an expert when it comes to boats, therefore the customer is more economical as compared to customer 1 (observation 1).
 
 2. 
+
 Factor 1: Q.9
+
 Factor 2: Q.18 or 21 (we chose 21)
+
 Factor 3: Q.4
+
 Factor 4: Q.11
+
 Factor 5: Q.2
 
 
@@ -436,7 +445,7 @@ Hierarchical_Cluster <- hclust(Hierarchical_Cluster_distances, method=hclust_met
 # Display dendogram
 iplot.dendrogram(Hierarchical_Cluster)
 # TODO: Draw dendogram with red borders around the 3 clusters
-#rect.hclust(Hierarchical_Cluster, k=numb_clusters_used, border="red") 
+#rect.hclust(dendroNetwork, k=numb_clusters_used, border="red") 
 ```
 
 We can also plot the "distances" traveled before we need to merge any of the lower and smaller in size clusters into larger ones - the heights of the tree branches that link the clusters as we traverse the tree from its leaves to its root. If we have n observations, this plot has n-1 numbers, we see the first 20 here. 
@@ -549,13 +558,18 @@ iprint.df(round(cluster_profile_ratios-1, 2))
 
 **Answers**
 
-1.The numbers in the last table indicate the % deviation from the mean of the population that each segment exhibits for a given question. Ie. for Question 1.1 Segment 1's average value is equal to the mean of the population while Segment 5 is on average 7% less than the mean. 
+1. The numbers in the last table indicate the % deviation from the mean of the population that each segment exhibits for a given question. Ie. for Question 1.1 Segment 1's average value is equal to the mean of the population while Segment 5 is on average 7% less than the mean. 
 
 2. The key features are the initial attitude questions (columns 2 to 30) and the final brand equity questions (columns 52-81). You can see that these features have clearly separate levels for each segments while there is much more overlap in the other features (columns 31-51).
+
 Segment 1: Q1.11 (-0.38) and Q7.1 (-0.17)
+
 Segment 2: Q1.11 (0.25), Q17 (0.25) and Q1.2 (-0.23)
+
 Segment 3: Q1.9 (0.45), Q1.2 (0.35), Q18 (-0.27) and Q1.26 (0.27) 
+
 Segment 4: Q17 (-0.19), Q1.4 (-0.16) and Q1.9 (-0.15) 
+
 Segment 5: Q1.9 (-0.42), Q1.11 (0.22), Q15 (0.18) and Q1.2 (-0.18)
 
 
