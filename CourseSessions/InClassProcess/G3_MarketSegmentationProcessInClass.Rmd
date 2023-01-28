@@ -170,9 +170,9 @@ write.csv(round(thecor,2), file = "thecor.csv")
 1. We found 11 correlations higher than 0.5:
 3-9, 9-26, 13-14, 14-15, 16-17, 16-18, 16-20, 16-28, 20-27, 20-28,  27-28. 
 
-Yes, the high correlations make sense. From our analysis, the questions can be grouped. For instance, questions 3, 9, and 26 all refer to boats representing a status symbol for the customer. For questions 13-17, these questions all refer to the customers’ knowledge on the boat, knowing the right technology and worth of boats and its accessories. Questions 16, 18, 20, 27, and 28 pertain to the customer’s view of boating as his or her passion (“how passionate the customer is towards boating”). 
+Yes, the high correlations make sense. From our analysis, the questions can be grouped. For instance, questions 3, 9, and 26 all refer to boats representing a status symbol for the customer. For questions 13-17, these questions all refer to the customers’ knowledge on boats, on right technology and accessories, and on worth. Questions 16, 18, 20, 27, and 28 pertain to the customer’s view of boating as his or her passion (“how passionate the customer is towards boating”). 
 
-2. The high correlations then imply that these questions are related to each other, and because they are related, they have low individual contribution or impact to the model.
+2. The high correlations then imply that these questions are related to each other, and because they are related, they have low individual contribution to or impact on the model.
 
 
 ## Step 4: Choose number of factors
@@ -281,16 +281,16 @@ write.csv(Rotated_Factors_thres, file = "Rotated_Factors_thres.csv")
 
 **Answers**
 
-1. For the first factor (component 1), the questions with significant values refer to boats as a status symbol for the customer. For the second factor (component 2), questions pertain to lifestyle where the customer treats their boats as rewards for their hard work, needing to go on an adventure. These two factors were considered the first and second component as they heavily influence the behavior of the customers towards their boats, how they value boats, which makes a lot of business sense.
+1. For the first factor (component 1), the questions with significant values refer to boats as a status symbol for the customer. For the second factor (component 2), questions pertain to lifestyle where the customer treats their boats as rewards for their hard work (i.e., needing to go on an adventure). These two factors were considered the first and second component as they heavily influence the behavior of the customers towards their boats, how they value boats, which makes a lot of business sense because these affect willingness to pay and/or customer elasticity.
 
 2. We should choose 5 factors. 
 a) Each of these factors have an eigenvalue that's higher than 1, which means they each explain a higher amount of variability than the average factor. The cumulative variability they explain is higher than 50%.
 b) These factors are easily interpretable (see question 3). 
 c) The first 5 factors capture the key drivers of individuals when it comes to boat purchases and boating preferences. Having more than 5 would risk oversegmentation.
 
-3. Looking at the questions within each factor, the significant ones were considered, and the following interpretation were derived. For the first factor, having high eigenvalue and explanatory power, refers to the value of boats for each customer if they treat boats as a status symbol or not. For the second factor, the questions pertain to lifestyle or how the boats will be used or is used by the customers. For the third factor, questions who how customers appreciate boat quality and brand. For the fourth factor, the questions determine the level of expertise of the customers, following from the appreciation of customers on boat quality. Lastly, the fifth factor has questions on practicality. These factors or grouping of questions help in focusing on the key behavior of customers.
+3. Looking at the questions within each factor, the significant ones were considered, and the following interpretations were derived. For the first factor, having high eigenvalue and explanatory power, refers to the value of boats for each customer if they treat boats as a status symbol or not. For the second factor, the questions pertain to lifestyle or how the boats will be used or is used by the customers. For the third factor, questions pertain to how customers appreciate boat quality and brand. For the fourth factor, the questions determine the level of expertise of the customers, apart from the appreciation of customers on boat quality. Lastly, the fifth factor has questions on practicality. These factors or grouping of questions help in focusing on the key behavior of customers.
 
-4. Data science techniques are very helpful in deriving useful insights from the data that would be otherwise difficult to digest and explain to the business. In this specific case, these techniques enables us to intrepret the customer responses to a survey and understand what factors customer appreciate when making a purchase decision.
+4. Data science techniques are very helpful in deriving useful insights from the data that would be otherwise be difficult to digest and explain to the business. In this specific case, these techniques enables us to intrepret the customer responses to a survey and understand what factors customer appreciate when making a purchase decision.
 
 
 ## Step 6:  Save factor scores 
@@ -573,7 +573,7 @@ We should also consider the robustness of our analysis as we change the clusteri
 **Answers**
 
 1. There are 5 segments that we selected in our market.  
-a) The statistical reason that we chose this number of segments is that 5 segments is where the "elbow" of the distance plot lies. Meaning, that the distance between the segments becomes much smaller as you increase the number of segments beyond this point. This number of segments was also robust in the sense that the segments created were similar when we ran both hclust and kmeans methods.   
+a) The statistical reason that we chose this number of segments is that 5 segments is where the "elbow" of the distance plot lies. Meaning, that the distance between the segments becomes much smaller as you increase the number of segments beyond this point, and 5 segments is the optimal point where increasing the number of segments would not yield a significantly different result. This number of segments was also robust in the sense that the segments created were similar when we ran both hclust and kmeans methods.   
 b) The interpretation of these segments is simple and clear. There are decisive profiles for each segment. They have differing price sensitivities, uses for their boats and attitudes towards boating in general.   
 c) The 5 segments we discovered are useful from a business sense in that there are clear types of boats that suit each segment. In addition, 5 different kinds of boats are a reasonable number for the company to consider.
 
